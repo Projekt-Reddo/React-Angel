@@ -15,11 +15,9 @@ const Account = () => {
             <Route path='/account/login'>
                 <Login />
             </Route>
-
             <Route path='/account/signup'>
                 <Signup />
             </Route>
-
             <Route path='*'>
                 <Error />
             </Route>
