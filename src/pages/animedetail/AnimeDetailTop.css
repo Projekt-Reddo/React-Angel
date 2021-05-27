@@ -1,19 +1,21 @@
 .anime-detail-top {
-    height: 40vh;
+    min-height: 40vh;
+    height: max-content;
     padding-bottom: 6%;
 }
 
 .bg_img {
-    height: 40vh;
+    min-height: 20vh;
+    height: auto;
+    width: 100%;
+    overflow: visible;
 }
 
 .content {
-    height: 20vh;
-    position: absolute;
+    min-height: 20vh;
+    height: auto;
     background-color: #19293B;
-    z-index: 1;
     width: 100%;
-    margin-top: 20vh;
 }
 
 .title-desc {
@@ -22,20 +24,29 @@
 }
 
 .thumb {
-    height: 20vh;
-    width: 14vh;
-    position: absolute;
+    min-height: 20vh;
+    width: 30%;
+    position: relative;
     z-index: 2;
-    top: 2.7rem;
-    left: 2rem;
+    top: 6.5vh;
+    left: 3vh;
+}
+
+.rate-fav-parent {
+    height: auto;
+    width: 100%;
+    margin-left: 40%;
 }
 
 .rating-button {
-    width: 8rem;
-    color: "white";
+    width: 70%;
+    height: 3rem;
+    color: #FFFFFF;
 }
 
 .favorite-button {
+    width: 3rem;
+    height: 3rem;
     background-color: #EC294B;
 }
 
@@ -85,30 +96,71 @@
 
 @media screen and (min-width: 768px) {
     .anime-detail-top {
+        min-height: 50vh;
+        height: auto;
+    }
+
+    .bg_img {
+        min-height: 30vh;
+        height: auto;
+        width: 100%;
+    }
+
+    .content {
+        min-height: 30vh;
+        height: auto;
+        width: 100%;
+    }
+
+    .thumb {
+        min-height: 30vh;
+        width: 27%;
+        position: relative;
+        z-index: 2;
+        top: 23vh;
+        left: 2vh;
+    }
+
+    .rate-fav-parent {
+        max-height: 35vh;
+        height: auto;
+        width: 100%;
+        padding-bottom: 10%;
+        margin-left: 25%;
+    }
+
+    .rating-button{
+        height: 3rem;
+        width: 10rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .anime-detail-top {
         height: 100vh;
     }
 
     .bg_img {
-        height: 100vh;
+        min-height: 50vh;
+        /* height: auto; */
+        width: 100%;
     }
 
     .content {
-        height: 50vh;
-        margin-top: 50vh;
+        min-height: 50vh;
+        height: auto;
     }
 
     .thumb {
-        height: 50vh;
-        width: 36vh;
-        top: 12.5rem;
-        left: 7rem;
-    }
-
-    .rating-button{
-        width: 10rem;
+        min-height: 50vh;
+        min-width: 35vh;
+        width: 18%;
+        top: 30vh;
+        left: 14vh;
     }
 
     .rate-fav-parent {
-        margin-top: 14rem;
+        max-height: 50vh;
+        margin-bottom: 5%;
     }
 }

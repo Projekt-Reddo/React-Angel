@@ -22,7 +22,7 @@ import Error from './pages/error/Error';
 import Footer from './pages/footer/Footer';
 
 const App = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
 
   const handleLogout = () => {
     setIsLogin(false);
@@ -48,7 +48,7 @@ const App = () => {
           </Route>
 
           <Route path='/account'>
-            <Account />
+            <Account isLogin={isLogin} />
           </Route>
 
           <Route path='/setting'>
