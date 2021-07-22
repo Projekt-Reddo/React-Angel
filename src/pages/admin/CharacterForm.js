@@ -25,7 +25,6 @@ const CharacterForm = ({ character, handleDeleteCharacter, handleInputCharacters
             let reader = new FileReader();
             reader.onload = function (e) {
                 //Get base64 only
-                // console.log(character.characterId);
                 handleInputCharactersInfo({ characterImage: e.target.result.split(',')[1] }, character.characterId)
                 setUploadCharacterImage(e.target.result);
             };

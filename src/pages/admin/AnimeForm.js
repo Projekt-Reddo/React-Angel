@@ -169,7 +169,7 @@ const AnimeForm = () => {
     const handAddNewCharacter = () => {
         setCharacter([
             ...characters, {
-                id: characterId,
+                characterId: characterId,
                 characterName: "",
                 characterRole: "",
                 characterImage: "",
